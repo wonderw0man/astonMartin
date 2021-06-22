@@ -62,7 +62,7 @@ button{
 .header{
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0,0.1)),
-    url(/Users/adarshagrahari/Public/HTML/astonmartin/img/db11.png) center/cover no-repeat;
+    url(db11.png) center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -157,7 +157,7 @@ button{
 /* FEATURE PAGE */
 .features{
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0,0.5)),
-    url(/Users/adarshagrahari/Public/HTML/AstonMartin/img/feature.png)center/cover no-repeat fixed;
+    url(feature.png)center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -205,7 +205,7 @@ button{
 }
 .product{
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0,0.5)),
-    url(/Users/adarshagrahari/Public/HTML/AstonMartin/img/pro.jpeg)center/cover no-repeat fixed;
+    url(pro.jpeg)center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -239,7 +239,7 @@ button{
 /* FOOTER PAGE */
 .footer{
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0,0.5)),
-    url(/Users/adarshagrahari/Public/HTML/AstonMartin/img/footer.jpeg)center/cover no-repeat fixed;
+    url(footer.jpeg)center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
