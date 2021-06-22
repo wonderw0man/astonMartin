@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+}
+:root{
+    --grey: #BBC5D3;
+    --dark: #ACACB4;
+    --blue: #788B98;
+    --pale: #E4C1A2;
+    --transition: all 0.4s ease-in-out;
+}
+
+body{
+    line-height: 1.5;
+    position: relative;
+
+}
+
+/* btn/links/list/img */
+a{
+    color: var(--grey);
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+ul li{
+    list-style-type: none;
+}
+button{
+    outline: 0;
+    cursor: pointer;
+}
+.container{
+    width: 90vw;
+    margin: auto;
+    margin-top: 1%;
+    
+}
+.btn-trans{
+    background-color: transparent;
+    color: var(--dark);
+    text-transform: capitalize;
+    margin-top: 3%;
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+    transition: var(--transition);
+}
+.btn-trans:hover{
+    background: var(--dark);
+    border-color: var(--dark);
+    color: whitesmoke;
+}
+/* HEADER */
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0,0.1)),
+    url(/Users/adarshagrahari/Public/HTML/astonmartin/img/db11.png) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    
+    
+}
+/* LOGO */
+.logo{ 
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+    font-size: 1.3rem;
+    border-bottom: 1.5px solid var(--dark);
+    z-index: 1000;
+}
+.logo a:hover{
+    text-shadow: 0 0 2px var(--grey);
+}
+
+/* NAVIGATION */
+
+.nav-links{
+    display: flex;
+    margin-right: 70%;
+    justify-content: space-between;
+    font-size: 1rem;
+    transition: var(--transition);
+    z-index: 1000;
+}
+.nav-links a{
+    margin: 10%;
+}
+.nav-links a:hover{
+    text-shadow: 0 0 5px var(--dark);
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    
+}
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: var(--dark);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.inline{
+    display: flex;
+}
+
+.nav-social{
+    display: flex;
+    z-index: 1000;
+    width: 200px;
+    align-items: flex-start;
+    justify-content: space-around;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.nav-social span{
+    margin: 10%;
+}
+.nav-social a:hover{
+    text-shadow: 0 0 5px var(--grey);
+}
+
+/* Header content */
+.car{
+    margin-top: -15%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    text-align: center;
+    font-family: 'Oxygen';
+}
+
+/*cursor*/
+.animate > .txt{
+    border-right: 0.2rem solid var(--dark);
+}
+.car h1{
+    font-size: 3rem;
+}
+.car span{
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+/* FEATURE PAGE */
+.features{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0,0.5)),
+    url(/Users/adarshagrahari/Public/HTML/AstonMartin/img/feature.png)center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.features h1{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    color: var(--pale);
+    font-size: 3rem;
+}
+.features h2{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    color: var(--grey);
+    font-size: 1.5rem;
+}
+.inline p{
+    align-items: center;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin-left: 5%;
+    color: var(--pale);
+}
+
+.photo{
+    margin-top: 2%;
+    margin-bottom: 2%;
+   
+    display: flex;
+    flex: 1;
+    width: 30%;
+}
+/* BOOK NOW */
+.product h1{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    color: var(--dark);
+    font-size: 3rem;
+}
+.product{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0,0.5)),
+    url(/Users/adarshagrahari/Public/HTML/AstonMartin/img/pro.jpeg)center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.description{
+    padding: 1.5rem 0;
+    text-align: center;
+}
+.product-img{
+    width: 40%;
+    display: flex;
+    flex: 1;
+    margin: 0 auto;
+}
+.product p{
+    display: flex;
+    color: var(--grey);
+}
+.product .btn-trans{
+    opacity: 90%;
+    background-color: var(--grey);
+    font-weight: 300;
+    color: whitesmoke;
+}
+.product .btn-trans:hover{
+    background-color: transparent;
+    border-color: var(--grey);
+    color: var(--grey);
+}
+
+/* FOOTER PAGE */
+.footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0,0.5)),
+    url(/Users/adarshagrahari/Public/HTML/AstonMartin/img/footer.jpeg)center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+}
+.footer-links{
+    margin-top: 1.2%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    transition: var(--transition);
+    margin-bottom: 2%;
+}
+.footer .brand{
+    font-size: 2rem;
+}
+.footer .brand i:hover{
+    text-shadow: 0 0 2px var(--grey);
+}
+.footer-links a:hover{
+    color: var(--pale);
+}
+.footer-text{
+    border-top: 1px solid var(--dark);
+    padding: 1.7rem 0;
+    color: var(--grey);
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:1024px) { 
+    .nav-links{
+        width: 60%;
+
+    }
+}
+
+@media screen and (max-width:800px) { 
+    body{
+        overflow: hidden;
+    }
+    .nav-social{
+        display: none;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+    .burger{
+        display: block;
+        z-index: 1000;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
